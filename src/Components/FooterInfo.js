@@ -1,6 +1,6 @@
-import './../Styles/Footer.scss';
+import '../Styles/Footer.scss';
 import { Facebook, Linkedin, Twitter, Youtube, Instagram } from 'react-bootstrap-icons'
-import { FooterInfoConstants } from './../Constants/constants'
+import { FooterInfoConstants } from '../Constants/constants'
 
 const FooterInfo = () => {
     return (

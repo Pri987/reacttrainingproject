@@ -1,21 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import axios from 'axios';
-import './../Styles/TechnologyInfo.scss'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import '../Styles/TechnologyInfo.scss';
 
-const TechnologyInfo = () => {
-
-    const [data, setData] = useState([])
+const TechnologyInfo = ({ techStackData, getTechStackList }) => {
 
     useEffect(() => {
-        axios.get('https://run.mocky.io/v3/9b251126-b32f-486c-ac67-800648929218')
-            .then((res) => {
-                setData(res.data)
-            })
-    })
+        getTechStackList();
+    }, techStackData)
 
     return (
         <div className="techInfoContainer">
@@ -25,7 +19,7 @@ const TechnologyInfo = () => {
             <div>
                 <Container>
                     <Row lg={4} md={5} sm={6}>
-                        {data && data.map((item) => (
+                        {techStackData && techStackData.map((item) => (
                             <Col lg={4} md={5} sm={6}>
                                 <Card key={item.id}>
                                     <Card.Body>

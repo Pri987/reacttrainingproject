@@ -1,7 +1,7 @@
-import logo from './../assets/img/logo.jpg';
+import logo from '../assets/img/logo.jpg';
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
-import './../Styles/Header.scss'
+import '../Styles/Header.scss'
 
 const Header = () => {
     return (

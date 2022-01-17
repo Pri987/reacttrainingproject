@@ -1,22 +1,12 @@
-import { useEffect, useState } from 'react';
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import axios from 'axios';
-import {DiversityAtWorkConstants} from './../Constants/constants'
-import './../Styles/DiversityAtWork.scss'
+import { useEffect } from 'react';
+import { DiversityAtWorkConstants } from '../Constants/constants'
+import '../Styles/DiversityAtWork.scss'
 
-const DiversityAtWork = () => {
-
-    const [data, setData] = useState([])
+const DiversityAtWork = ({ photosList, getPhotosList }) => {
 
     useEffect(() => {
-        axios.get('https://picsum.photos/v2/list?page=2&limit=10')
-            .then((res) => {
-                setData(res.data)
-            })
-    })
+        getPhotosList();
+    }, photosList)
 
     return (
         <div className="diversityAtWorkContainer">
@@ -28,7 +18,7 @@ const DiversityAtWork = () => {
                 <p>{DiversityAtWorkConstants.DESC_3}</p>
             </div>
             <div className="flexChild2">
-                {data && data.map((item) => (
+                {photosList && photosList.map((item) => (
                     <img key={item.id} src={item.download_url} alt="some img" />
                 ))}
             </div>

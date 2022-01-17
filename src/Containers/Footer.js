@@ -1,5 +1,5 @@
-import FooterInfo from './../Components/FooterInfo'
-import Copyright from './../Components/Copyright'
+import FooterInfo from '../Components/FooterInfo'
+import Copyright from '../Components/Copyright'
 
 const Footer = () => {
     return (
