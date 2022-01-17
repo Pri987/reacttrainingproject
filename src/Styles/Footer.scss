@@ -1,0 +1,45 @@
+.footerInfo {
+    height: auto;
+    background-color: #2b332d;
+}
+
+.information, .flex-container {
+    margin: 10px 60px 0px 60px;
+    padding: 60px 0;
+}
+
+.copyright {
+    height: 40px;
+    background-color: #1c211e;
+    display: flex;
+    align-items: center;
+}
+
+.copyright span{
+    color: white;
+    margin: 50px;
+    font-size: small;
+}
+
+.title {
+    color: green;
+    font-weight: bold;
+    font-size: large;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact, p{
+    color: grey;
+}
+
+a {
+    margin: 0 15px 0 0;
+}

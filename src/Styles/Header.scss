@@ -1,0 +1,19 @@
+ .navbar {
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+   a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navbar a:hover, a:hover{
+    color: green;
+  }
+  
+  .navbar button{
+    border: 1px solid black;
+  }

@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './Containers/Header'
+import Footer from './Containers/Footer'
+import Home from './Containers/Home'
+import CurrentOpenings from './Containers/CurrentOpenings'
+import Benefits from './Containers/Benefits'
+import LifeAtWork from './Containers/LifeAtWork'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './Styles/App.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <div>
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/job-list" exact element={<CurrentOpenings />} />
+            <Route path="/benefits" exact element={<Benefits />} />
+            <Route path="/life-work" exact element={<LifeAtWork />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router >
   );
 }
 

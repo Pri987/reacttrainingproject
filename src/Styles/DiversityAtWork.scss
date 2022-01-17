@@ -1,0 +1,25 @@
+.diversityAtWorkContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.flexChild1 {
+    flex: 0 1 900px;
+    margin: 50px;
+}
+
+.flexChild2 {
+    flex-wrap: wrap;
+}
+
+.card-body {
+    border: none;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+}
