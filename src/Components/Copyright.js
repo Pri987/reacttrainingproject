@@ -1,9 +1,10 @@
 import './../Styles/Footer.scss';
+import { FooterInfoConstants } from '../Constants/constants'
 
 const Copyright = () => {
     return (
         <div className="copyright">
-            <span>&#169; Happiest Minds 2022 | All Rights Reserved</span>
+            <span>&#169; {FooterInfoConstants.FOOTER_INFO}</span>
         </div>
     );
 }

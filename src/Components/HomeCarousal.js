@@ -1,9 +1,9 @@
 
 const HomeCarousal = () => {
     return (
-        <footer>
-            HomeCarousal
-        </footer>
+        <div style={{ height: '400px', backgroundColor: 'gray' }}>
+            Home Carousal
+        </div>
     );
 }
 

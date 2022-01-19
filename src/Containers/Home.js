@@ -3,23 +3,27 @@ import HomeCarousal from '../Components/HomeCarousal'
 import TechnologyInfo from '../Components/TechnologyInfo'
 import Jobs from '../Components/Jobs'
 import { connect } from 'react-redux';
+import { Component } from 'react';
 import * as actions from '../Actions/Actions';
 
-const Home = (props) => {
-    return (
-        <div>
-            <HomeCarousal />
-            <Jobs />
-            <TechnologyInfo
-                techStackData={props.techStackData}
-                getTechStackList={props.getTechStackList}
-            />
-            <DiversityAtWork
-                photosList={props.photosList}
-                getPhotosList={props.getPhotosList}
-            />
-        </div>
-    );
+class Home extends Component {
+    render() {
+        const { techStackData, getTechStackList, photosList, getPhotosList } = this.props;
+        return (
+            <div>
+                <HomeCarousal />
+                <Jobs />
+                <TechnologyInfo
+                    techStackData={techStackData}
+                    getTechStackList={getTechStackList}
+                />
+                <DiversityAtWork
+                    photosList={photosList}
+                    getPhotosList={getPhotosList}
+                />
+            </div>
+        );
+    }
 }
 
 const mapStateToProps = (state) => {

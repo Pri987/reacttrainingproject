@@ -1,0 +1,50 @@
+.jobsContainer {
+    width: auto;
+    height: 300px;
+    color: grey;
+    display: flex;
+
+    .jobSearch {
+        background-color: rgb(124, 218, 218);
+        width: 80%;
+        height: auto;
+    }
+
+    .sideSection {
+        width:30%;
+    }
+
+    .jobRecommend {
+        height: 100px;
+        background-color: rgb(63, 194, 63);
+        text-align: center;
+        position: relative;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    
+    .pics {
+        height: 200px;
+        width:100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        position: relative;
+    }
+
+    .textOnImage {
+        position: absolute;
+        bottom: 38px;
+        color: white;
+        left: 16px;
+    }
+    .textOnImage1 {
+        position: absolute;
+        bottom: 4px;
+        color: white;
+        left: 16px;
+    }
+}
