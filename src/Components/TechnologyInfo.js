@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../Styles/TechnologyInfo.scss';
 import { TechnologyInfoConstants, CommonConstants } from '../Constants/constants'
+import axios from 'axios';
 
 const TechnologyInfo = ({ techStackData, getTechStackList }) => {
 

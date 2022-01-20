@@ -38,3 +38,11 @@ export const TechnologyInfoConstants = {
 export const CommonConstants = {
     'IMAGE_NOT_LOADING': 'Image not loading...'
 }
+
+export const JobConstants = {
+    'SKILLS': ['Artificial Intelligence and Machine Learning', 'Robotic Process Automation (RPA)', 'Edge Computing', 'Quantum Computing', 'Virtual Reality and Augmented Reality',
+        'Blockchain', 'Internet of Things (IoT)', '5G', 'JavaScript', 'Ruby', 'Java', 'PHP', 'Python', 'Scala', 'Elixir',
+        'Cyber Security', 'Java', 'C', 'C++', 'SQL', 'Selenium', 'Kotlin', 'Swift', 'Flutter', 'Cordova', 'AngularJS', 'ReactJS', 'Redis', 'VueJS', 'Postgres', 'SQLite', 'MySQL', 'Kubernetes', 'Docker'],
+    'LOCATIONS': ['All Locations ', 'Bangalore', 'Chennai', 'Noida', 'Dubai', 'US', 'Pune'],
+    'EXPERIENCE': ['Select Experience ', ...Array(21).keys()]
+}

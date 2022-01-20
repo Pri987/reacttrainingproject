@@ -53,9 +53,9 @@ const DiversityAtWork = ({ photosList, getPhotosList }) => {
                 <p>{DiversityAtWorkConstants.DESC_2}</p>
                 <p>{DiversityAtWorkConstants.DESC_3}</p>
             </div>
-            <div className="flexChild2" style={{ display: 'flex' }}>
+            <div className="flexChild2">
                 {photosList && photosList.map((item) => (
-                    <div key={item.id} style={{ flex: '1', position: 'relative' }}>
+                    <div key={item.id}>
                         <img
                             src={item.download_url}
                             alt={CommonConstants.IMAGE_NOT_LOADING}
@@ -63,25 +63,25 @@ const DiversityAtWork = ({ photosList, getPhotosList }) => {
                             onMouseLeave={() => setShowFullScreenIcon(false)}
                             onClick={() => setShowModal(true)}
                         />
-                        {showFullScreenIcon && imgId === item.id && <ArrowsFullscreen style={{ position: 'absolute', top: '30px', right: '45px' }} onClick={() => { }} />}
+                        {showFullScreenIcon && imgId === item.id && <ArrowsFullscreen className="fullScreenIcon" onClick={() => { }} />}
                     </div>
                 ))}
             </div>
             {showModal && <Modal size="lg" centered aria-labelledby="contained-modal-title-center" onHide={!showModal} show={showModal}>
                 <Modal.Body>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <Button style={{ height: '50px' }} variant="secondary" onClick={showPreviousImg}><ArrowLeftShort /></Button>
+                    <div className="modalBody">
+                        <Button className="modalBodyBtn" variant="secondary" onClick={showPreviousImg}><ArrowLeftShort /></Button>
                         {photosList && photosList.map((item) => (
                             imgId === item.id &&
                             <img
-                                style={{ width: "90%", height: "100%" }}
+                                className="modalBodyImg"
                                 key={item.id}
                                 src={item.download_url}
                                 alt={CommonConstants.IMAGE_NOT_LOADING}
                             />
                         ))
                         }
-                        <Button style={{ height: '50px' }} variant="secondary" onClick={showNextImg}><ArrowRightShort /></Button>
+                        <Button className="modalBodyBtn" variant="secondary" onClick={showNextImg}><ArrowRightShort /></Button>
                     </div>
                 </Modal.Body>
                 <Modal.Footer>

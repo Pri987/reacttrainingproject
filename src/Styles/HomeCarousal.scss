@@ -1,0 +1,19 @@
+.visually-hidden, .carousel-control-next, .carousel-control-prev {
+    display: none;
+}
+
+.d-block.w-100 {
+    margin:0;
+    padding: 0;
+    height: 400px;
+    border-radius: 0;
+}
+
+.carousel-indicators {
+     bottom: 20px;
+}
+
+.carouselImg {
+    width: 50px;
+    height: 50px;
+}

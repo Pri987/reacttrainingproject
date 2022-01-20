@@ -11,6 +11,12 @@
 
 .flexChild2 {
     flex-wrap: wrap;
+    display: flex;
+
+    div {
+         flex: 1;
+         position: relative;
+    }
 }
 
 .card-body {
@@ -22,4 +28,25 @@ img {
     width: 255px;
     border-radius: 15px;
     padding: 10px;
+}
+
+.modalBody {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.modalBodyBtn {
+    height: 50px
+}
+
+.modalBodyImg {
+    width: 90%; 
+    height: 100%;
+}
+
+.fullScreenIcon {
+    position: absolute;
+    top: 30px;
+    right: 45px;
 }

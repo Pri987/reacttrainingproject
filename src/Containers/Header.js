@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { List } from 'react-bootstrap-icons'
 import { Link } from "react-router-dom";
 import '../Styles/Header.scss';
-import { HeaderConstants } from '../Constants/constants';
+import { HeaderConstants, CommonConstants } from '../Constants/constants';
 import { useEffect, useState } from 'react';
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <div className="App-header">
             <div className="navbar">
-                <img src={logo} className="App-logo" alt="logo" />
+                <img src={logo} className="App-logo" alt={CommonConstants.IMAGE_NOT_LOADING} />
                 <Link to="/">{HeaderConstants.CARRERS}</Link>
             </div>
             {isDesktop &&
@@ -46,7 +46,7 @@ const Header = () => {
                     <p><Link to="/life-work">{HeaderConstants.LIFE_AT_WORK}</Link></p>
                 </div>
             }
-            {!isDesktop && <Button style={{ height: '50px', position: 'relative', right: '15px', top: '10px' }} size="lg" variant="outline-secondary" onClick={() => setShowCollapsedOption(!showCollapsedOption)}><List /></Button>}
+            {!isDesktop && <Button className="hamBurgerButton" size="lg" variant="outline-secondary" onClick={() => setShowCollapsedOption(!showCollapsedOption)}><List /></Button>}
         </div>
     );
 }
