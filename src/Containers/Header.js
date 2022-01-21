@@ -35,7 +35,7 @@ const Header = () => {
                     <Link to="/job-list">{HeaderConstants.CURRENT_OPENINGS}</Link>
                     <Link to="/benefits">{HeaderConstants.BENEFITS}</Link>
                     <Link to="/life-work">{HeaderConstants.LIFE_AT_WORK}</Link>
-                    <Button size="sm" variant="light">{HeaderConstants.COMPANY_WEBSITE}</Button>
+                    <a href="https://www.happiestminds.com/"><Button size="sm" variant="light">{HeaderConstants.COMPANY_WEBSITE}</Button></a>
                 </div>
             }
             {showCollapsedOption &&

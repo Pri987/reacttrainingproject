@@ -25,7 +25,7 @@ export const DiversityAtWorkConstants = {
 export const HeaderConstants = {
     'CARRERS': 'Careers',
     'HOME': 'Home',
-    'CURRENT_OPENINGS': 'Current Openings',
+    'CURRENT_OPENINGS': 'Current Openings ',
     'BENEFITS': 'Benefits',
     'LIFE_AT_WORK': 'Life@Work',
     'COMPANY_WEBSITE': 'COMPANY WEBSITE',
@@ -43,6 +43,18 @@ export const JobConstants = {
     'SKILLS': ['Artificial Intelligence and Machine Learning', 'Robotic Process Automation (RPA)', 'Edge Computing', 'Quantum Computing', 'Virtual Reality and Augmented Reality',
         'Blockchain', 'Internet of Things (IoT)', '5G', 'JavaScript', 'Ruby', 'Java', 'PHP', 'Python', 'Scala', 'Elixir',
         'Cyber Security', 'Java', 'C', 'C++', 'SQL', 'Selenium', 'Kotlin', 'Swift', 'Flutter', 'Cordova', 'AngularJS', 'ReactJS', 'Redis', 'VueJS', 'Postgres', 'SQLite', 'MySQL', 'Kubernetes', 'Docker'],
-    'LOCATIONS': ['All Locations ', 'Bangalore', 'Chennai', 'Noida', 'Dubai', 'US', 'Pune'],
+    'LOCATIONS': ['All Locations', 'Bangalore', 'Chennai', 'Noida', 'Dubai', 'US', 'Pune'],
     'EXPERIENCE': ['Select Experience ', ...Array(21).keys()]
+}
+
+export const CurrentOpeningsConstants = {
+    'NO_DATA': 'No Data Found',
+    'HEADING': 'Current Openings',
+    'RESET': 'RESET',
+    'APPLY': 'Apply',
+    'EXPERIENCE': 'Experience:',
+    'LOCATION': 'Location:',
+    'POSTED': 'Posted on',
+    'JOBS_FOUND':'Jobs Found',
+    'JOB_ORDER_LIST':['Most Recent First','Most Recent Last']
 }

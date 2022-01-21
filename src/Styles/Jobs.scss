@@ -6,7 +6,7 @@
 
     .jobSearch {
         background-color: rgb(124, 218, 218);
-        width: 80%;
+        width: 90%;
         height: auto;
     }
 
@@ -62,15 +62,16 @@
     
     .formItems {
         margin: 50px 20px;
-        margin-bottom: 0;
+        margin-bottom: 3px;
+        flex: 1;
     }
+}
 
-    .searchIcon {
-        color:white;
-        position: relative;
-        top: 50px;
-        right: 10px;
-    }
+.searchIcon {
+    color: white;
+    position: absolute;
+    right: 27%;
+    top: 555px;
 }
 
 .bulbImg {
@@ -90,12 +91,11 @@ li:hover{
 
 .suggestionList {
     position: absolute;
-    left: 20px;
     width: 250px;
-    z-index: 10;
+    margin: 0 20px;
 
     li {
-        padding: 5px 5px;
+        padding: 9px 9px;
         cursor: pointer; 
         background-color: white;
     }    

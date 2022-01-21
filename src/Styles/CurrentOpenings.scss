@@ -1,0 +1,60 @@
+.currentOpeningsContainer {
+    background-color: lightgrey;
+
+    .searchJobDiv {
+        padding: 30px 30px 0 30px;
+
+        h1 {
+            margin-left: 40px;
+        }
+          
+        .searchJobs{
+            width: 80%;
+            margin: 20px;
+            align-items: end;
+        }
+
+        button {
+            float: right;
+            position: relative;
+            bottom: 60px;
+        }
+
+        .someMoreFilters {
+            margin: 30px;
+
+            .filter {
+                float: right;
+            }
+
+        }
+    }
+
+    .badge {
+        margin: 5px;
+         border: 1px solid black;
+    }
+}
+
+.allJobsContainer {
+
+    button {
+        float: right;
+    }
+
+    .titleOnCardHover {
+        color: green;
+    }
+}
+
+.searchIcon1 {
+    position: absolute;
+    right: 13%;
+    color: green;
+    top: 255px;
+}
+
+.noDataFound {
+    margin: 40px;
+     justify-content: center;
+}

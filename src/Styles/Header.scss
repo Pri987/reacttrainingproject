@@ -6,13 +6,21 @@
 
   a {
     color: grey;
+  }
+  
+  .navbar a:link {
+    color: grey;
+  }
+
+  .navbar a:hover, a:hover{
+    color: green;
     text-decoration: none;
   }
   
-  .navbar a:hover, a:hover{
-    color: green;
+  .navbar a:active {
+    color: black;
   }
-  
+
   .navbar button{
     border: 1px solid black;
   }
